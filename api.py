@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from todo import todo
+from peliculas import pelicula
 
 app = FastAPI()
 
@@ -11,4 +11,4 @@ def home():
 def greeting(name:str):
     return "Hello " + name
 
-app.include_router(todo)
+app.include_router(pelicula)
